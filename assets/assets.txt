@@ -1,0 +1,5 @@
+Dentro de esta carpeta ingresar assets
+va a estar dividida en subcarpetas:
+anim: animaciones 
+img: destinada para imagenes
+video: para videos
