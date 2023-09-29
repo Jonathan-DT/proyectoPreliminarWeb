@@ -1,5 +1,5 @@
 <?php
-require_once('database.php'); //conexion a base de datos
+require_once('../database/database.php'); //conexion a base de datos
 
 // Obtiene el ID de la noticia desde la URL
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
@@ -98,5 +98,5 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
 $conn->close();
 
-require('script.php');
+require('../script.php');
 ?>

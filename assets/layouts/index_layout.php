@@ -1,6 +1,6 @@
 <?php require('assets/layouts/header_layout.php'); ?>
 <main>
-<?php require('assets/layouts/carrousel_destacado_layout.php'); ?>
+    <?php require('assets/layouts/carrousel_destacado_layout.php'); ?>
 
     <div style="padding: 150px;">
         <div class="container">
@@ -22,7 +22,7 @@
                         echo '<div class="card-body">';
                         echo '<h5 class="card-title">' . $row['titulo'] . '</h5>';
                         echo '<p class="card-text">' . substr($row['descripcion'], 0, 100) . '...</p>'; // Muestra una descripción truncada
-                        echo '<a href="noticia_completa.php?id=' . $row['id'] . '" class="btn">Ver más</a>'; // Agrega el enlace "Ver más" con el ID del artículo
+                        echo '<a href="php/func/noticia_completa.php?id=' . $row['id'] . '" class="btn">Ver más</a>'; // Agrega el enlace "Ver más" con el ID del artículo
                         echo '</div>';
                         echo '</div>';
                         echo '</div>';
@@ -30,7 +30,7 @@
                 } else {
                     echo 'No se encontraron noticias.';
                 }
-
+                
                 // Cierra la conexión a la base de datos
                 $conn->close();
                 ?>
