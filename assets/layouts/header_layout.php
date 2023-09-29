@@ -45,7 +45,7 @@
             }
             ?>
         </ul>
-        <form class="form-inline my-2 my-lg-0" method="post" action="php/func/search.php">
+        <form class="form-inline my-2 my-lg-0" method="post" action="/noticias/php/func/search.php">
             <input class="form-control mr-sm-2" type="search" name="search" placeholder="Buscar noticias" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
         </form>
