@@ -3,3 +3,5 @@ va a estar dividida en subcarpetas:
 anim: animaciones 
 img: destinada para imagenes
 video: para videos
+views: la vista donde se hereda 
+layouts: es la plantilla principal

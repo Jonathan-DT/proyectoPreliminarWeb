@@ -1,9 +1,9 @@
 <?php
 // Configuración de la conexión a la base de datos
-$servername = " ";
-$username = " ";
-$password = " ";
-$dbname = " ";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "noticiasgamer";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);

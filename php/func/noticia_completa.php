@@ -1,5 +1,4 @@
 <?php
-require('header.php');
 require_once('database.php'); //conexion a base de datos
 
 // Obtiene el ID de la noticia desde la URL
