@@ -5,17 +5,17 @@
         <div id="carouselExampleCaptions" class="carousel slide news-carousel" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="Imagenes/descargar 1.png" class="d-block w-100" alt="jugadora no es aceptada en valorant">
+            <img src="assets/.png" class="d-block w-100" alt="jugadora no es aceptada en valorant">
             <div class="carousel-caption d-none d-md-block">
-                <h2 class="news-title">Jugadora no es aceptada en equipo de Valorant</h2>
-                <p class="news-description">Algunos jugadores habrían rechazado 'jugar con una mujer', aunque la protagonista de la noticia comenta que no es la tónica habitual en la escena profesional de Valorant.</p>
+                <h2 class="news-title"></h2>
+                <p class="news-description"></p>
             </div>
             </div>
             <div class="carousel-item">
-            <img src="Imagenes/torneo-videojuegos-transmision-vivo-adultos-jovenes-pc-linea-multiples-jugadores-jugando-juegos-accion-computadora-streamer-masculino-auriculares-disfrutando-competencia-juegos.jpg" class="d-block w-100" alt="Conoce todo acerca de los torneos">
+            <img src="assets/jpg" class="d-block w-100" alt="">
             <div class="carousel-caption d-none d-md-block">
-                <h2 class="news-title">Conoce todo acerca de los torneos</h2>
-                <p class="news-description">Descubre los últimos torneos de videojuegos y los mejores jugadores en acción.</p>
+                <h2 class="news-title"></h2>
+                <p class="news-description"></p>
             </div>
             </div>
         </div>
