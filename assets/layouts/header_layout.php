@@ -1,27 +1,43 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gamer News</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-		.navbar-nav .active > a {
-			background-color: cyan;
+<?php include 'base/template_base.php' ?>
+<?php startblock('style') ?>
+<style>
+    .navbar-nav .active > a {
+            border: white solid 0.5px;
+            border-radius: 5px;
+            padding: 5px;
+            text-decoration: none;
+            color: white;
 		}
-	</style>
-</head>
-<body>
-<header>
-    <nav class="navbar navbar-dark" style="background-color: #1D1919;">
+        .navbar-nav .active > a:hover{
+            background-color: #A09491;
+        }
+        
+        .navbar-nav  a {
+            border: white solid 0.5px;
+            border-radius: 5px;
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+		}
+        .navbar-nav  a:hover{
+            background-color: #A09491;
+        }
+       
+</style>
+<?php endblock() ?>
+<?php startblock('title') ?>
+   news
+<?php endblock() ?>
+
+<?php startblock('header') ?>
+<nav class="navbar navbar-dark" style="background-color: #1D1919;">
     <div class="container-fluid">
         <ul class="nav navbar-nav">
             <li class="<?php echo (basename($_SERVER['PHP_SELF']) == 'index.php') ? 'active' : ''; ?>">
-                <a href="index.php">Home <i class="fa fa-home"></i></a>
+                <a href="/noticias/index.php">Home<i class="fa fa-home"></i></a>
             </li>
             <?php
-            session_start();
+            session_start(); 
 
             if (isset($_SESSION['user_id'])) {
                 // Si el usuario está autenticado, muestra un enlace de cierre de sesión dentro de la lista de navegación
@@ -29,7 +45,7 @@
             }
             ?>
         </ul>
-        <form class="form-inline my-2 my-lg-0" method="post" action="search.php">
+        <form class="form-inline my-2 my-lg-0" method="post" action="php/func/search.php">
             <input class="form-control mr-sm-2" type="search" name="search" placeholder="Buscar noticias" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
         </form>
@@ -43,5 +59,4 @@
         ?>
     </div>
     </nav>
-</header>
-
+<?php endblock() ?>

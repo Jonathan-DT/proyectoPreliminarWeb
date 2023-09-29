@@ -1,6 +1,6 @@
 <?php
-require('header.php'); 
-require_once('database.php'); // Incluye el archivo de conexión a la base de datos
+require('../../assets/layouts/header_layout.php'); 
+require_once('../database/database.php'); // Incluye el archivo de conexión a la base de datos
 
 // Comprueba si se ha enviado una consulta de búsqueda
 if (isset($_POST['search'])) {
@@ -31,5 +31,5 @@ if (isset($_POST['search'])) {
     }
 }
 
-require('script.php');
+require('../script.php');
 ?>

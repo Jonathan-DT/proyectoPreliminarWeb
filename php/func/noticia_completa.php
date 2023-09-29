@@ -1,6 +1,6 @@
 <?php
 require_once('../database/database.php'); //conexion a base de datos
-
+require('../../assets/layouts/header_layout.php');
 // Obtiene el ID de la noticia desde la URL
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $article_id = $_GET['id'];
