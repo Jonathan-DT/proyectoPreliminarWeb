@@ -1,0 +1,128 @@
+
+body{
+  background-color: #4e4c4c;
+}
+
+.news-title {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Estilos para la imagen grande */
+.img-fluid.rounded {
+  width: 100%;
+  max-height: 80vh; /* Ajusta la altura máxima según tus preferencias */
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+/* Estilos para el cuadro gris */
+.gray-box {
+  background-color: #430303; /* Color de fondo gris */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(183, 15, 15, 0.2); /* Sombra ligera */
+}
+
+.card  {
+  background-color: #1D1919;
+  border: 6px solid #830909;
+  color: #830909;
+  margin-bottom: 2rem;
+}
+
+.btn{
+color: #05ffb4;
+}
+
+#carouselExampleCaptions {
+  width: 100%; 
+  max-width: none; 
+}
+
+.carousel-item img {
+  width: 100%; 
+  height: auto; 
+}
+
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  padding: 15px; 
+}
+
+
+
+p{
+    color: #e4e4e4;
+}
+
+.loader {
+    animation: rotate 1s infinite;
+    height: 50px;
+    width: 50px;
+
+  }
+
+  .loader:before,
+  .loader:after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+  }
+  .loader:before {
+    animation: ball1 1s infinite;
+    background-color: #1D1919;
+    box-shadow: 30px 0 0 #830909;
+    margin-bottom: 10px;
+  }
+  .loader:after {
+    animation: ball2 1s infinite;
+    background-color: #830909;
+    box-shadow: 30px 0 0 #1D1919;
+  }
+
+  @keyframes rotate {
+    0% { transform: rotate(0deg) scale(0.8) }
+    50% { transform: rotate(360deg) scale(1.2) }
+    100% { transform: rotate(720deg) scale(0.8) }
+  }
+
+  @keyframes ball1 {
+    0% {
+      box-shadow: 30px 0 0 #830909;
+    }
+    50% {
+      box-shadow: 0 0 0 #830900;
+      margin-bottom: 0;
+      transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 #830909;
+      margin-bottom: 10px;
+    }
+  }
+
+  @keyframes ball2 {
+    0% {
+      box-shadow: 30px 0 0 #1D1919;
+    }
+    50% {
+      box-shadow: 0 0 0 #1D1919;
+      margin-top: -20px;
+      transform: translate(15px, 15px);
+    }
+    100% {
+      box-shadow: 30px 0 0 #1D1919;
+      margin-top: 0;
+    }
+  }
+  
