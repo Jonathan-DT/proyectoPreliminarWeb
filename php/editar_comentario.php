@@ -28,7 +28,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['comment_id']) && is_n
 } else {
     echo 'Solicitud no válida.';
 }
-
+// liberamos memoria
+mysqli_free_result($result);
 // Cierra la conexión a la base de datos
 $conn->close();
 ?>

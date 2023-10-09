@@ -29,6 +29,9 @@ if (isset($_POST['search'])) {
         echo '<p>No se encontraron resultados.</p>';
         echo '</div>';
     }
+    //liberar memoria y cerrar conn
+    mysqli_free_result($result);
+    $conn->close();
 }
 
 require('../script.php');

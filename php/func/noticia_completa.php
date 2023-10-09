@@ -96,6 +96,9 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     echo 'ID de noticia no válido.';
 }
 
+//liberar memoria 
+mysqli_free_result($result);
+
 $conn->close();
 
 require('../script.php');
