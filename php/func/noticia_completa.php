@@ -56,13 +56,15 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
                 echo '<p class="card-text">' . $comentario['fecha'] . '</p>';
                 
                 //botones de editar y eliminar
-                echo '<form method="post" action="editar_comentario.php" style="display:inline;">';
+                echo '<form method="post" action="../editar_comentario.php" style="display:inline;">';
                 echo '<input type="hidden" name="comment_id" value="' . $comentario['noticia_id'] . '">';
+                echo '<input type="hidden" name="article_id" value="' . $article_id . '">';
                 echo '<button type="submit" class="btn btn-warning btn-sm">Editar</button>';
                 echo '</form>';
                 
-                echo '<form method="post" action="eliminar_comentario.php" style="display:inline;">';
+                echo '<form method="post" action="../eliminar_comentario.php" style="display:inline;">';
                 echo '<input type="hidden" name="comment_id" value="' . $comentario['noticia_id'] . '">';
+                echo '<input type="hidden" name="article_id" value="' . $article_id . '">';
                 echo '<button type="submit" class="btn btn-danger btn-sm">Eliminar</button>';
                 echo '</form>';
                 
@@ -81,7 +83,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
         // Formulario para agregar comentarios
         echo '<div class="container mt-4">';
         echo '<h3>Agregar Comentario:</h3>';
-        echo '<form method="post" action="procesar_comentario.php">';
+        echo '<form method="post" action="../procesar_comentario.php">';
         echo '<div class="form-group">';
         echo '<textarea class="form-control" name="comentario" rows="4" required></textarea>';
         echo '</div>';
@@ -97,7 +99,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 }
 
 //liberar memoria 
-mysqli_free_result($result);
+//mysqli_free_result($result);
 
 $conn->close();
 

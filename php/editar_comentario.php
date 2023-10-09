@@ -1,10 +1,11 @@
 <?php
 // Requiere el archivo de conexión a la base de datos
-require_once('database.php');
+require_once('database/database.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['comment_id']) && is_numeric($_POST['comment_id'])) {
     // Obtén el ID del comentario a editar
     $comment_id = $_POST['comment_id'];
+    $article_id = $_POST['article_id'];
 
     // Realiza una consulta SQL para obtener el comentario existente
     $sql = "SELECT * FROM comentarios WHERE noticia_id = $comment_id";
@@ -19,6 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['comment_id']) && is_n
         // Puedes usar el valor de $existingComment en un campo de texto para la edición
         echo '<form method="post" action="guardar_edicion_comentario.php">';
         echo '<input type="hidden" name="comment_id" value="' . $comment_id . '">';
+        echo '<input type="hidden" name="article_id" value="' . $article_id . '">';
         echo '<textarea name="edited_comment">' . $existingComment . '</textarea>';
         echo '<button type="submit">Guardar Cambios</button>';
         echo '</form>';

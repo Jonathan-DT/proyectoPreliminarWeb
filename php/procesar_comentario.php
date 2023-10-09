@@ -1,5 +1,5 @@
 <?php
-require_once('database.php'); // Asegúrate de incluir la conexión a la base de datos en este archivo
+require_once('database/database.php'); // Asegúrate de incluir la conexión a la base de datos en este archivo
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['comentario']) && isset($_POST['article_id'])) {
     $article_id = $_POST['article_id'];
@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['comentario']) && isse
     $stmt->bind_param("is", $article_id, $comentario);
 
     if ($stmt->execute()) {
-        header("Location: noticia_completa.php?id=$article_id"); // Redirige de nuevo a la página de la noticia completa
+        header("Location: func/noticia_completa.php?id=$article_id"); // Redirige de nuevo a la página de la noticia completa
         exit;
     } else {
         echo 'Hubo un error al agregar el comentario. Por favor, inténtalo de nuevo.';
