@@ -5,8 +5,8 @@ class ConexionServer{
         /* Este código establece una conexión a una base de datos MySQL utilizando PDO (objetos de
         datos PHP). */
         $server = "localhost";
-        $user = "RTX_DB";
-        $pass = "DrStone1415.";
+        $user = "";
+        $pass = "";
         $db = "noticiasgamer";
         try{
             $conexion = new PDO("mysql:hostname=$server;dbname=$db",$user,$pass);

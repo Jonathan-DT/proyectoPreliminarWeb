@@ -1,8 +1,8 @@
 <?php
 // Configuración de la conexión a la base de datos
 $servername = "localhost";
-$username = "RTX_DB";
-$password = "DrStone1415.";
+$username = "";
+$password = "";
 $dbname = "noticiasgamer";
 
 // Crear conexión
