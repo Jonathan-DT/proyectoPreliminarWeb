@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer News</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-dark" style="background-color: #1D1919;">
+      <div class="container-fluid">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="background-color: #FFFFFF;">
+          <button class="btn btn-outline-success" type="submit">Search<i class="bi bi-search"></i></button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div style="padding: 50px;">
+      <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide news-carousel" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Imagenes/descargar 1.png" class="d-block w-100" alt="jugadora no es aceptada en valorant">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="news-title">Jugadora no es aceptada en equipo de Valorant</h2>
+                <p class="news-description">Algunos jugadores habrían rechazado 'jugar con una mujer', aunque la protagonista de la noticia comenta que no es la tónica habitual en la escena profesional de Valorant.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Imagenes/torneo-videojuegos-transmision-vivo-adultos-jovenes-pc-linea-multiples-jugadores-jugando-juegos-accion-computadora-streamer-masculino-auriculares-disfrutando-competencia-juegos.jpg" class="d-block w-100" alt="Conoce todo acerca de los torneos">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="news-title">Conoce todo acerca de los torneos</h2>
+                <p class="news-description">Descubre los últimos torneos de videojuegos y los mejores jugadores en acción.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<script type="text/javascript">
+  $(window).load(function(){
+    $(".loader").delay(2000).fadeOut("slow");
+  });
+</script>
+</html>
