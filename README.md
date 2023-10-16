@@ -3,3 +3,6 @@ proyecto preliminar de la materia Diseño Web, al final del parcial sufrirá cam
 
 # Rutas en el header
 para que la navegacíon te funcione deberás cambiar las rutas absolutas del header_layout a la ruta de tu pc por el momento hasta que se monte en un servidor.
+
+# Variables de Entorno 
+dentro del archivo .env guardar todas las credenciales necesarias para el proyecto, para no comprometer información delicada
