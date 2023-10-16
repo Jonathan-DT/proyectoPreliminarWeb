@@ -34,7 +34,7 @@
     <div class="container-fluid">
         <ul class="nav navbar-nav">
             <li class="<?php echo (basename($_SERVER['PHP_SELF']) == 'index.php') ? 'active' : ''; ?>">
-                <a href="/jona/index.php">Home<i class="fa fa-home"></i></a>
+                <a href="/noticias/index.php">Home<i class="fa fa-home"></i></a>
             </li>
             <?php
             session_start(); 

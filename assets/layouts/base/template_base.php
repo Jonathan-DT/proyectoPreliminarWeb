@@ -1,4 +1,3 @@
-<?//php require_once('./assets/library/ti.php') ?>
 <?php require_once('/var/www/html/noticias/assets/library/ti.php') // ruta absoluta desde la raíz del servidor?> 
 
 <!DOCTYPE html>
